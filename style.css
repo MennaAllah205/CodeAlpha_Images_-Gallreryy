@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #29a7ec;
+    padding: 20px;
+  }
+  .gallery {
+
+    gap: 10px;
+    padding: 20px;
+}
+.gallery-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+.gallery-items img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    gap: 10px;
+}
+.gallery-items a:hover img {
+    transform: scale(1.05 )rotate(-15deg); 
+    filter: brightness(80%); 
+    border-radius: 20px;
+}
